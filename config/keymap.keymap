@@ -78,10 +78,10 @@
 
         layer_0 {
             bindings = <
-&kp Q                        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U                   &kp I                 &kp O                  &kp P
-&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J                   &kp K                 &kp L                  &mt LEFT_CONTROL SEMICOLON
-&kp Z                        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M                   &mkp LCLK             &td_rightclick_scroll  &kp SLASH
-&mt LEFT_COMMAND LANGUAGE_2  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &lt_hold_first 6 ENTER  &lt_hold_first 2 TAB  &none                  &none                       &none  &mt RIGHT_COMMAND LANGUAGE_1
+&kp Q                        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U                   &kp I                 &kp O              &kp P
+&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J                   &kp K                 &kp L              &mt LEFT_CONTROL SEMICOLON
+&kp Z                        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M                   &mkp LCLK             &layer_mkp 1 RCLK  &kp SLASH
+&mt LEFT_COMMAND LANGUAGE_2  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &lt_hold_first 6 ENTER  &lt_hold_first 2 TAB  &none              &none                       &none  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
