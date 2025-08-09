@@ -7,10 +7,9 @@
     combos {
         compatible = "zmk,combos";
 
-        bt_clear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <28 29>;
-            layers = <2>;
+        mission_ctl {
+            bindings = <&kp LC(DOWN)>;
+            key-positions = <27 28>;
         };
     };
 
@@ -51,10 +50,10 @@
 
         layer_0 {
             bindings = <
-&kp Q        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U      &kp I                 &kp O  &kp P
-&kp A        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L  &kp SEMICOLON
-&kp Z        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M      &mkp LCLK             &sl 1  &kp SLASH
-&bootloader  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &kp ENTER  &lt_hold_first 2 TAB  &none  &none          &none  &bootloader
+&kp Q                        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U      &kp I                 &kp O  &kp P
+&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L  &mt SEMICOLON LEFT_CONTROL
+&kp Z                        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M      &mkp LCLK             &sl 1  &kp SLASH
+&mt LEFT_COMMAND LANGUAGE_2  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &kp ENTER  &lt_hold_first 2 TAB  &none  &none                       &none  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
@@ -87,10 +86,10 @@
 
         layer_4 {
             bindings = <
-&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)     &trans          &trans    &trans        &trans     &trans
-&kp LG(W)         &kp LC(LEFT)      &kp LC(UP_ARROW)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
-&trans            &trans            &trans            &trans            &trans         &trans          &trans    &trans        &trans     &trans
-&trans            &trans            &trans            &trans            &trans         &trans          &kp HOME  &kp END       &trans     &trans  &trans  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)     &trans          &trans     &trans        &trans     &trans
+&kp LG(W)         &kp LC(LEFT)      &kp LC(UP_ARROW)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT  &trans
+&trans            &trans            &trans            &trans            &trans         &trans          &trans     &trans        &trans     &trans
+&trans            &trans            &trans            &trans            &trans         &trans          &kp LC(A)  &kp LC(E)     &trans     &trans  &trans  &trans
             >;
         };
 
