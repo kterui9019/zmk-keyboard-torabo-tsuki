@@ -52,6 +52,25 @@
             release-after-ms = <99999>;
             quick-release;
         };
+
+        layer_mkp: layer_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_MKP";
+            bindings = <&mo>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "hold-preferred";
+        };
+
+        td_rightclick_scroll: td_rightclick_scroll {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_RIGHTCLICK_SCROLL";
+            #binding-cells = <0>;
+            bindings = <&mkp RCLK>, <&tog 1>;
+
+            tapping-term-ms = <190>;
+        };
     };
 
     keymap {
@@ -59,10 +78,10 @@
 
         layer_0 {
             bindings = <
-&kp Q                        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U      &kp I                 &kp O              &kp P
-&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L              &mt LEFT_CONTROL SEMICOLON
-&kp Z                        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M      &mkp LCLK             &long_sticky_lt 1  &kp SLASH
-&mt LEFT_COMMAND LANGUAGE_2  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &kp ENTER  &lt_hold_first 2 TAB  &none              &none                       &none  &mt RIGHT_COMMAND LANGUAGE_1
+&kp Q                        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U                   &kp I                 &kp O                  &kp P
+&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J                   &kp K                 &kp L                  &mt LEFT_CONTROL SEMICOLON
+&kp Z                        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M                   &mkp LCLK             &td_rightclick_scroll  &kp SLASH
+&mt LEFT_COMMAND LANGUAGE_2  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &lt_hold_first 6 ENTER  &lt_hold_first 2 TAB  &none                  &none                       &none  &mt RIGHT_COMMAND LANGUAGE_1
             >;
         };
 
@@ -113,10 +132,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)  &trans              &trans        &trans            &trans         &trans
+&trans            &trans            &trans            &trans            &trans      &kp LG(LEFT_ARROW)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &trans
+&trans            &trans            &trans            &trans            &trans      &trans              &trans        &trans            &trans         &trans
+&trans            &trans            &trans            &trans            &trans      &trans              &trans        &trans            &trans         &trans  &trans  &trans
             >;
         };
     };
