@@ -50,6 +50,7 @@
             bindings = <&mo>;
             #binding-cells = <1>;
             release-after-ms = <99999>;
+            quick-release;
         };
     };
 
@@ -59,7 +60,7 @@
         layer_0 {
             bindings = <
 &kp Q                        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U      &kp I                 &kp O              &kp P
-&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L              &mt SEMICOLON LEFT_CONTROL
+&kp A                        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L              &mt LEFT_CONTROL SEMICOLON
 &kp Z                        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M      &mkp LCLK             &long_sticky_lt 1  &kp SLASH
 &mt LEFT_COMMAND LANGUAGE_2  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &kp ENTER  &lt_hold_first 2 TAB  &none              &none                       &none  &mt RIGHT_COMMAND LANGUAGE_1
             >;
