@@ -51,19 +51,19 @@
 
         layer_0 {
             bindings = <
-&kp Q        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U      &kp I                 &kp O   &kp P
-&kp A        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L   &kp SEMICOLON
-&kp Z        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M      &mkp LCLK             &tog 1  &kp SLASH
-&bootloader  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &kp ENTER  &lt_hold_first 2 TAB  &none   &none          &none  &bootloader
+&kp Q        &kp W      &kp E    &kp R        &kp T                 &kp Y                      &kp U      &kp I                 &kp O  &kp P
+&kp A        &kp S      &kp D    &kp F        &kp G                 &kp H                      &kp J      &kp K                 &kp L  &kp SEMICOLON
+&kp Z        &kp X      &kp C    &kp V        &kp B                 &kp N                      &kp M      &mkp LCLK             &sl 1  &kp SLASH
+&bootloader  &kp COMMA  &kp DOT  &eng_on_esc  &mt LEFT_SHIFT SPACE  &lt_quick_tap 4 BACKSPACE  &kp ENTER  &lt_hold_first 2 TAB  &none  &none          &none  &bootloader
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans          &trans          &trans        &trans           &trans
-&trans  &trans  &trans  &trans     &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans          &trans          &mkp RCLK     &trans           &trans
-&trans  &trans  &trans  &trans     &trans     &trans          &trans          &trans        &trans           &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                &trans  &trans     &trans                 &trans
+&trans  &trans  &trans  &trans     &trans     &kp LG(LEFT_BRACKET)  &trans  &trans     &kp LG(RIGHT_BRACKET)  &trans
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans                &trans  &mkp RCLK  &trans                 &trans
+&trans  &trans  &trans  &trans     &trans     &trans                &trans  &trans     &trans                 &trans  &trans  &trans
             >;
         };
 
@@ -87,19 +87,19 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp HOME        &kp PAGE_DOWN  &kp PG_UP     &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans         &trans        &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &kp HOME       &kp END       &trans     &trans  &trans  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(N5)     &trans          &trans    &trans        &trans     &trans
+&kp LG(W)         &kp LC(LEFT)      &kp LC(UP_ARROW)  &kp LC(DOWN)      &kp LC(RIGHT)  &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans
+&trans            &trans            &trans            &trans            &trans         &trans          &trans    &trans        &trans     &trans
+&trans            &trans            &trans            &trans            &trans         &trans          &kp HOME  &kp END       &trans     &trans  &trans  &trans
             >;
         };
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans    &trans  &trans     &trans  &trans  &trans
+&bt BT_NXT   &trans  &trans  &trans  &trans  &kp F13  &kp F7  &kp F8  &kp F9  &kp F10
+&trans       &trans  &trans  &trans  &trans  &kp F12  &kp F4  &kp F5  &kp F6  &trans
+&trans       &trans  &trans  &trans  &trans  &kp F11  &kp F1  &kp F2  &kp F3  &trans
+&bootloader  &trans  &trans  &trans  &trans  &trans   &trans  &trans  &trans  &trans   &trans  &bootloader
             >;
         };
 
