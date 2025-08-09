@@ -69,7 +69,7 @@
             #binding-cells = <0>;
             bindings = <&mkp RCLK>, <&tog 1>;
 
-            tapping-term-ms = <210>;
+            tapping-term-ms = <230>;
         };
 
         ht_rightclick: ht_rightclick {
@@ -97,10 +97,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans                &trans  &trans     &trans                 &trans
-&trans  &trans  &trans  &trans     &trans     &kp LG(LEFT_BRACKET)  &trans  &trans     &kp LG(RIGHT_BRACKET)  &trans
-&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans                &trans  &mkp RCLK  &trans                 &trans
-&trans  &trans  &trans  &trans     &trans     &trans                &trans  &trans     &trans                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans                &trans  &trans  &trans                 &trans
+&trans  &trans  &trans  &trans     &trans     &kp LG(LEFT_BRACKET)  &trans  &trans  &kp LG(RIGHT_BRACKET)  &trans
+&trans  &trans  &trans  &mkp RCLK  &mkp LCLK  &trans                &trans  &to 0   &trans                 &trans
+&trans  &trans  &trans  &trans     &trans     &trans                &trans  &trans  &trans                 &trans  &trans  &trans
             >;
         };
 
